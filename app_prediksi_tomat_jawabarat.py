@@ -366,7 +366,7 @@ def main():
     )
 
     st.sidebar.markdown("---")
-    prediksi_masa_depan = st.sidebar.checkbox("🔮 Prediksi Tahun Masa Depan")
+    prediksi_masa_depan = st.sidebar.checkbox("🔮 Prediksi Tahun Terbaru")
 
     if prediksi_masa_depan:
         tahun_prediksi = st.sidebar.number_input(
@@ -457,4 +457,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
