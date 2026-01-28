@@ -138,7 +138,7 @@ def train_best_model(df: pd.DataFrame):
             ("model", model)
         ])
 
-        if name in ["SVR", "Random Forest"]:
+        if name in ["Linear Regression","SVR", "Random Forest"]:
             cv_scores = cross_val_score(
                 pipe,
                 X,
@@ -468,4 +468,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
